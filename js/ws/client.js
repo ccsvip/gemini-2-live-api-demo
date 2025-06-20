@@ -17,7 +17,7 @@ export class GeminiWebsocketClient extends EventEmitter {
     constructor(name, url, config) {
         super();
         this.name = name || 'WebSocketClient';
-        this.url = url || `wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent?key=${apiKey}`;
+        this.url = url || `wss://ws.isxm.cn/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent?key=${apiKey}`;
         this.ws = null;
         this.config = config;
         this.isConnecting = false;
